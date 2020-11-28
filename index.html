@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Lab Exercise
+    </title>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><strong>Athens School</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Student List <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grades.html">Student Grades</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                <th scope="col">Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <form id="form-1">
+                    <td>
+                        <input type="text" name="firstname" value="John">
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" value="Doe">
+                    </td>
+                    <td>
+                        <input type="text" name="email" value="john@example.com">
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-minus" id="btn-minus-1">-</button>
+                        <p id="class-1" style="display: inline;">2</p>
+                        <button type="button" class="btn btn-primary btn-plus" id="btn-plus-1">+</button>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form id="form-2">
+                    <td>
+                        <input type="text" name="firstname" value="Mary">
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" value="Moe">
+                    </td>
+                    <td>
+                        <input type="text" name="email" value="mary@example.com">
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-minus" id="btn-minus-2">-</button>
+                        <p id="class-2" style="display: inline;">1</p>
+                        <button type="button" class="btn btn-primary btn-plus" id="btn-plus-2">+</button>
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <form id="form-3">
+                    <td>
+                        <input type="text" name="firstname" value="July">
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" value="Dooley">
+                    </td>
+                    <td>
+                        <input type="text" name="email" value="july@example.com">
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-minus" id="btn-minus-3">-</button>
+                        <p id="class-3" style="display: inline;">4</p>
+                        <button type="button" class="btn btn-primary btn-plus" id="btn-plus-3">+</button>
+                    </td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

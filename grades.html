@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Lab Exercise
+    </title>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><strong>Athens School</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Student List <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Student Grades</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col" class="text-right">Grade Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="student-row" id="row-0" data-toggle="modal" data-target="#editmodal" style="cursor:pointer">
+                <td id="title-0">John Doe</td>
+                <td class="text-right" id="grade-0">0</td>
+            </tr>
+            <tr class="student-row" id="row-1" data-toggle="modal" data-target="#editmodal" style="cursor:pointer">
+                <td id="title-1">Mary Moe</td>
+                <td class="text-right" id="grade-1">0</td>
+            </tr>
+            <tr class="student-row" id="row-2" data-toggle="modal" data-target="#editmodal" style="cursor:pointer">
+                <td id="title-2">July Dooley</td>
+                <td class="text-right" id="grade-2">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="editmodal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title">asf</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col" class="text-right">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calculus</td>
+                        <td class="student-grade" style="text-align: right;"><input class="grade-input" type="text" id="calculus" value="0" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>Literature</td>
+                        <td class="student-grade" style="text-align: right;"><input class="grade-input" type="text" id="literature" value="0" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>Physics</td>
+                        <td class="student-grade" style="text-align: right;"><input class="grade-input" type="text" id="physics" value="0" style="text-align: right;"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="confirm-btn" data-dismiss="modal">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
